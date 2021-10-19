@@ -1,72 +1,139 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color:rgb(233, 232, 232);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+body {
+  background-color:#e6ecf4;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
   
   /* Style the header */
-  header {
-    background-color:rgb(233, 232, 232);
-    padding: 20px;
-    text-align: left;
-    font-size: 25px;
-    color: rgb(2, 2, 75);
-  }
+header {
+  color: #004295    ;
+  font-family: "Georgia", Sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 7.6px;
+  background-color: #e6ecf4;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 50px;
+}
 
-  .logo{
-      position: relative;
-      float: right;
-      width: 160px;
-      height: 120px;
-  }
+#login_link{
+  float:right;
+  margin: 10px;
+}
+
+  /* Style the logo */
+.logo{
+  position: relative;
+  float: right;
+  width: 196px;
+  height: 196px;
+}
 
   /* Style the navigation menu */
   nav {
-    background-color:rgb(224, 224, 224);
+    background-color:#9bb4d5;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the menu */
-  nav a {
-    float: left;
-    display: block;
-    color: rgb(1, 1, 48);
     text-align: center;
-    padding: 14px 16px;
+  }
+    
+    /* Style the links inside the menu */
+  nav a {
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 500 ;
+    color: #0a264c ;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    letter-spacing: 1.5px;
     text-decoration: none;
+    flex-grow: 1;    
+  }
+  /* change anchor's background when hovering or clicking */
+  nav a.active, nav a:hover{
+    background-color: #82a2ca;
+    color: rgb(56, 73, 109);
+    font-weight: 600;
   }
 
-  .img1{
-    width:100%;
-  }
-  .txt{
-      position: absolute;
-      text-align: left;
-      background: none;
-      padding: 300px 100px;
-      font-size: 200%;
-      color: #f1f1f1;
-  }
+  /*Blank Area surrounding parallax*/
+.BlankSpace{
+  height: 15px;
+  align-content: center;
+  background-color:rgb(56, 73, 109) ;
+}
 
-  .header{
-    color: rgb(2, 2, 75);
-    font-size: 200%;
-  }
 
-  .dr1, .dr2, .dr3, .dr4{
-    color: rgb(15, 15, 97);
-  }
+footer{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #0a264c ;
+}
+.phone, .phone_no{
+    display: inline;
+}
 
-  
-  
-  
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-  @media (max-width: 800px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
+
+.dropdown {
+  overflow: hidden;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color:#0a264c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  color: #0a264c;
+  text-align: center;
+  margin: 15% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 50%; 
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  padding-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
